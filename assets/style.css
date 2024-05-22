@@ -1,0 +1,78 @@
+body{
+    background-color: rgba(177, 177, 231, 0.534);
+    min-height: 100vh;
+    font-family: 'Poetsen One';
+}
+.container{
+    background-color: #fff;
+    width: 400px;
+    margin: 100px auto;
+    padding: 10px 50px;
+    border-radius: 20px;
+}
+.inner-wrapper{
+    margin: 0 auto;
+    max-width: 350px;
+    width: 100%;
+}
+.todo-tilte{
+    position: relative;
+    left: -10px;
+    color: #3c3f41;
+    font-size: 25px;
+}
+.input-wrapper{
+    border-radius: 20px;
+    background-color: #EEEFF0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.input-wrapper input{
+    background-color: transparent;
+    outline: none;
+    border: 0px;
+    flex: 1;
+    padding: 10px;
+}
+.input-wrapper button{
+    border: 0px;
+    background-color: rgba(167, 167, 209, 0.875);   
+    border-radius: 20px;
+    color: #3c3f41;
+    font-family: 'Poetsen One';
+    padding: 10px 13px;
+    cursor: pointer;
+}
+.list{
+    list-style: none;
+    padding: 0px;
+}
+.list li{
+    vertical-align: middle;
+    font-weight: 400;
+    padding: 5px;
+    position: relative;
+}
+.list li.checked{
+    text-decoration: line-through;
+}
+.list li::before{
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url('assets/unchecked.jpeg');
+    background-size: center;
+    background-repeat: no-repeat;
+    background-position: center; 
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.delete{
+    color: rgb(188, 81, 67);
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
